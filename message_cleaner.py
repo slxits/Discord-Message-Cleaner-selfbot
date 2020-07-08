@@ -7,8 +7,8 @@ import time
 client = discord.Client()
 with open('config.json', 'r') as handle:
     config = json.load(handle)
-    token = (config["token"])
-    if token == "Token_Here":
+    token = (config["NzAwNDA0NTkyMTU1OTUxMTY1.XwVOFg.KZWhoFKnplKOG0QAp_S1SUIMQSo"])
+    if token == "NzAwNDA0NTkyMTU1OTUxMTY1.XwVOFg.KZWhoFKnplKOG0QAp_S1SUIMQSo":
         print ("You Haven't set up the config.json. Please set it up and then run the program again.")
         time.sleep(5)
         sys.exit()
@@ -37,4 +37,4 @@ async def on_message(message):
         await asyncio.sleep(1)
         await end.delete()
 
-client.run(token, bot=False)
+client.run(token, bot=true)
